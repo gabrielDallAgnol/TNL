@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1D6921A71CE0577ADF2CE6 /* Pods_TNL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7543842B17FCCA3E1A20B87A /* Pods_TNL.framework */; };
 		8AA6709A23DA92D800614493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709923DA92D800614493 /* AppDelegate.swift */; };
 		8AA6709C23DA92D800614493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709B23DA92D800614493 /* SceneDelegate.swift */; };
 		8AA6709E23DA92D800614493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709D23DA92D800614493 /* ViewController.swift */; };
-		8AA670A123DA92D800614493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6709F23DA92D800614493 /* Main.storyboard */; };
 		8AA670A323DA92DF00614493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670A223DA92DF00614493 /* Assets.xcassets */; };
-		8AA670A623DA92DF00614493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670A423DA92DF00614493 /* LaunchScreen.storyboard */; };
+		8AA670B123DA998000614493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670A423DA92DF00614493 /* LaunchScreen.storyboard */; };
+		8AA670B223DA998600614493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6709F23DA92D800614493 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D6D6C3F328E2994A9522FAD /* Pods-TNL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNL.debug.xcconfig"; path = "Target Support Files/Pods-TNL/Pods-TNL.debug.xcconfig"; sourceTree = "<group>"; };
+		46640A2562C4435154316242 /* Pods-TNL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNL.release.xcconfig"; path = "Target Support Files/Pods-TNL/Pods-TNL.release.xcconfig"; sourceTree = "<group>"; };
+		7543842B17FCCA3E1A20B87A /* Pods_TNL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TNL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA6709623DA92D800614493 /* TNL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA6709923DA92D800614493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA6709B23DA92D800614493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1D6921A71CE0577ADF2CE6 /* Pods_TNL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DCF65B0EBFC01E7AFB77830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7543842B17FCCA3E1A20B87A /* Pods_TNL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ACAFE82454C2FE23593FADE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D6C3F328E2994A9522FAD /* Pods-TNL.debug.xcconfig */,
+				46640A2562C4435154316242 /* Pods-TNL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8AA6708D23DA92D800614493 = {
 			isa = PBXGroup;
 			children = (
 				8AA6709823DA92D800614493 /* TNL */,
+				6ACAFE82454C2FE23593FADE /* Pods */,
 				8AA6709723DA92D800614493 /* Products */,
+				2DCF65B0EBFC01E7AFB77830 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,47 @@
 		8AA6709823DA92D800614493 /* TNL */ = {
 			isa = PBXGroup;
 			children = (
-				8AA6709923DA92D800614493 /* AppDelegate.swift */,
-				8AA6709B23DA92D800614493 /* SceneDelegate.swift */,
-				8AA6709D23DA92D800614493 /* ViewController.swift */,
-				8AA6709F23DA92D800614493 /* Main.storyboard */,
+				8AA670AE23DA98C600614493 /* Application */,
+				8AA670AD23DA967300614493 /* Supporting Files */,
+				8AA670AF23DA98D900614493 /* Modules */,
+			);
+			path = TNL;
+			sourceTree = "<group>";
+		};
+		8AA670AD23DA967300614493 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				8AA670A223DA92DF00614493 /* Assets.xcassets */,
 				8AA670A423DA92DF00614493 /* LaunchScreen.storyboard */,
 				8AA670A723DA92DF00614493 /* Info.plist */,
 			);
-			path = TNL;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AA670AE23DA98C600614493 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6709923DA92D800614493 /* AppDelegate.swift */,
+				8AA6709B23DA92D800614493 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8AA670AF23DA98D900614493 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8AA670B023DA98EB00614493 /* Landing */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8AA670B023DA98EB00614493 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6709D23DA92D800614493 /* ViewController.swift */,
+				8AA6709F23DA92D800614493 /* Main.storyboard */,
+			);
+			path = Landing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AA670AA23DA92DF00614493 /* Build configuration list for PBXNativeTarget "TNL" */;
 			buildPhases = (
+				84944F4CD366659D2F23DB1D /* [CP] Check Pods Manifest.lock */,
 				8AA6709223DA92D800614493 /* Sources */,
 				8AA6709323DA92D800614493 /* Frameworks */,
 				8AA6709423DA92D800614493 /* Resources */,
+				A14D008684E4DC5111CEFA6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +183,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA670A623DA92DF00614493 /* LaunchScreen.storyboard in Resources */,
+				8AA670B223DA998600614493 /* Main.storyboard in Resources */,
+				8AA670B123DA998000614493 /* LaunchScreen.storyboard in Resources */,
 				8AA670A323DA92DF00614493 /* Assets.xcassets in Resources */,
-				8AA670A123DA92D800614493 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84944F4CD366659D2F23DB1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TNL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A14D008684E4DC5111CEFA6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TNL/Pods-TNL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TNL/Pods-TNL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TNL/Pods-TNL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AA6709223DA92D800614493 /* Sources */ = {
@@ -282,11 +382,12 @@
 		};
 		8AA670AB23DA92DF00614493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6D6C3F328E2994A9522FAD /* Pods-TNL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5675V369VA;
-				INFOPLIST_FILE = TNL/Info.plist;
+				INFOPLIST_FILE = "TNL/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +401,12 @@
 		};
 		8AA670AC23DA92DF00614493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46640A2562C4435154316242 /* Pods-TNL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5675V369VA;
-				INFOPLIST_FILE = TNL/Info.plist;
+				INFOPLIST_FILE = "TNL/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
