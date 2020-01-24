@@ -20,6 +20,8 @@
 		8AA670BF23DAB05300614493 /* SimpleNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670BD23DAB05300614493 /* SimpleNotificationViewController.swift */; };
 		8AA670C023DAB05300614493 /* SimpleNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670BE23DAB05300614493 /* SimpleNotificationViewController.xib */; };
 		8AA670C223DAB22D00614493 /* UITapGestureRecognizerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */; };
+		8AA670C423DABCA500614493 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C323DABCA500614493 /* UIViewControllerExtensions.swift */; };
+		8AA670C823DAD67D00614493 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C723DAD67D00614493 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		8AA670BD23DAB05300614493 /* SimpleNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNotificationViewController.swift; sourceTree = "<group>"; };
 		8AA670BE23DAB05300614493 /* SimpleNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleNotificationViewController.xib; sourceTree = "<group>"; };
 		8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtensions.swift; sourceTree = "<group>"; };
+		8AA670C323DABCA500614493 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		8AA670C723DAD67D00614493 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 			children = (
 				8AA670BA23DA9FED00614493 /* ColorsExtensions.swift */,
 				8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */,
+				8AA670C323DABCA500614493 /* UIViewControllerExtensions.swift */,
+				8AA670C723DAD67D00614493 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA670C423DABCA500614493 /* UIViewControllerExtensions.swift in Sources */,
 				8AA670B623DA9D4400614493 /* LoginViewController.swift in Sources */,
 				8AA670C223DAB22D00614493 /* UITapGestureRecognizerExtensions.swift in Sources */,
+				8AA670C823DAD67D00614493 /* StringExtensions.swift in Sources */,
 				8AA670BF23DAB05300614493 /* SimpleNotificationViewController.swift in Sources */,
 				8AA670BB23DA9FED00614493 /* ColorsExtensions.swift in Sources */,
 				8AA6709E23DA92D800614493 /* LandingViewController.swift in Sources */,

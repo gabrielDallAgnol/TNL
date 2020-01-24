@@ -10,10 +10,6 @@ import UIKit
 
 class LandingViewController: UIViewController {
   
-  override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
-  }
-  
   @IBOutlet weak var backgroundView: UIView! {
     didSet {
       backgroundView.backgroundColor = UIColor.darkBlueGrey
@@ -91,8 +87,14 @@ class LandingViewController: UIViewController {
     }
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    navigationController?.navigationBar.barStyle = .black
+    self.navigationController?.navigationBar.isHidden = true
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     setupLabelTouch()
   }
   
@@ -113,7 +115,8 @@ class LandingViewController: UIViewController {
   }
   
   @objc func tappedLoginButton() {
-    print("Go to Login")
+    let viewController = LoginViewController()
+    self.navigationController!.pushViewController(viewController, animated: true)
   }
   
   @objc func tappedRegisterButton() {

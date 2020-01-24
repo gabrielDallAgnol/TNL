@@ -6,4 +6,17 @@
 //  Copyright © 2020 Gabriel Schmit Dall Agnol. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIViewController {
+
+  func setupKeyboard() {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+         tap.cancelsTouchesInView = false
+         view.addGestureRecognizer(tap)
+  }
+
+  @objc func dismissKeyboard() {
+      view.endEditing(true)
+  }
+}
