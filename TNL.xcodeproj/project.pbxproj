@@ -10,10 +10,16 @@
 		8A1D6921A71CE0577ADF2CE6 /* Pods_TNL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7543842B17FCCA3E1A20B87A /* Pods_TNL.framework */; };
 		8AA6709A23DA92D800614493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709923DA92D800614493 /* AppDelegate.swift */; };
 		8AA6709C23DA92D800614493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709B23DA92D800614493 /* SceneDelegate.swift */; };
-		8AA6709E23DA92D800614493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709D23DA92D800614493 /* ViewController.swift */; };
+		8AA6709E23DA92D800614493 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709D23DA92D800614493 /* LandingViewController.swift */; };
 		8AA670A323DA92DF00614493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670A223DA92DF00614493 /* Assets.xcassets */; };
 		8AA670B123DA998000614493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670A423DA92DF00614493 /* LaunchScreen.storyboard */; };
-		8AA670B223DA998600614493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6709F23DA92D800614493 /* Main.storyboard */; };
+		8AA670B223DA998600614493 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6709F23DA92D800614493 /* Landing.storyboard */; };
+		8AA670B623DA9D4400614493 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670B423DA9D4300614493 /* LoginViewController.swift */; };
+		8AA670B723DA9D4400614493 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670B523DA9D4300614493 /* LoginViewController.xib */; };
+		8AA670BB23DA9FED00614493 /* ColorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670BA23DA9FED00614493 /* ColorsExtensions.swift */; };
+		8AA670BF23DAB05300614493 /* SimpleNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670BD23DAB05300614493 /* SimpleNotificationViewController.swift */; };
+		8AA670C023DAB05300614493 /* SimpleNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670BE23DAB05300614493 /* SimpleNotificationViewController.xib */; };
+		8AA670C223DAB22D00614493 /* UITapGestureRecognizerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +29,17 @@
 		8AA6709623DA92D800614493 /* TNL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA6709923DA92D800614493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA6709B23DA92D800614493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AA6709D23DA92D800614493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AA670A023DA92D800614493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AA6709D23DA92D800614493 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		8AA670A023DA92D800614493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Landing.storyboard; sourceTree = "<group>"; };
 		8AA670A223DA92DF00614493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AA670A523DA92DF00614493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AA670A723DA92DF00614493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA670B423DA9D4300614493 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8AA670B523DA9D4300614493 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8AA670BA23DA9FED00614493 /* ColorsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtensions.swift; sourceTree = "<group>"; };
+		8AA670BD23DAB05300614493 /* SimpleNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNotificationViewController.swift; sourceTree = "<group>"; };
+		8AA670BE23DAB05300614493 /* SimpleNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleNotificationViewController.xib; sourceTree = "<group>"; };
+		8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				8AA670AE23DA98C600614493 /* Application */,
-				8AA670AD23DA967300614493 /* Supporting Files */,
+				8AA670B823DA9F7300614493 /* Entities */,
+				8AA670B923DA9FA900614493 /* Extensions */,
 				8AA670AF23DA98D900614493 /* Modules */,
+				8AA670AD23DA967300614493 /* Supporting Files */,
 			);
 			path = TNL;
 			sourceTree = "<group>";
@@ -109,6 +123,8 @@
 		8AA670AF23DA98D900614493 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8AA670BC23DAB02600614493 /* NotificationModel */,
+				8AA670B323DA9D1F00614493 /* Login */,
 				8AA670B023DA98EB00614493 /* Landing */,
 			);
 			path = Modules;
@@ -117,10 +133,44 @@
 		8AA670B023DA98EB00614493 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				8AA6709D23DA92D800614493 /* ViewController.swift */,
-				8AA6709F23DA92D800614493 /* Main.storyboard */,
+				8AA6709D23DA92D800614493 /* LandingViewController.swift */,
+				8AA6709F23DA92D800614493 /* Landing.storyboard */,
 			);
 			path = Landing;
+			sourceTree = "<group>";
+		};
+		8AA670B323DA9D1F00614493 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8AA670B423DA9D4300614493 /* LoginViewController.swift */,
+				8AA670B523DA9D4300614493 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8AA670B823DA9F7300614493 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8AA670B923DA9FA900614493 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AA670BA23DA9FED00614493 /* ColorsExtensions.swift */,
+				8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8AA670BC23DAB02600614493 /* NotificationModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AA670BD23DAB05300614493 /* SimpleNotificationViewController.swift */,
+				8AA670BE23DAB05300614493 /* SimpleNotificationViewController.xib */,
+			);
+			path = NotificationModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +233,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA670B223DA998600614493 /* Main.storyboard in Resources */,
+				8AA670B723DA9D4400614493 /* LoginViewController.xib in Resources */,
+				8AA670B223DA998600614493 /* Landing.storyboard in Resources */,
 				8AA670B123DA998000614493 /* LaunchScreen.storyboard in Resources */,
+				8AA670C023DAB05300614493 /* SimpleNotificationViewController.xib in Resources */,
 				8AA670A323DA92DF00614493 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,7 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA6709E23DA92D800614493 /* ViewController.swift in Sources */,
+				8AA670B623DA9D4400614493 /* LoginViewController.swift in Sources */,
+				8AA670C223DAB22D00614493 /* UITapGestureRecognizerExtensions.swift in Sources */,
+				8AA670BF23DAB05300614493 /* SimpleNotificationViewController.swift in Sources */,
+				8AA670BB23DA9FED00614493 /* ColorsExtensions.swift in Sources */,
+				8AA6709E23DA92D800614493 /* LandingViewController.swift in Sources */,
 				8AA6709A23DA92D800614493 /* AppDelegate.swift in Sources */,
 				8AA6709C23DA92D800614493 /* SceneDelegate.swift in Sources */,
 			);
@@ -247,12 +303,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AA6709F23DA92D800614493 /* Main.storyboard */ = {
+		8AA6709F23DA92D800614493 /* Landing.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8AA670A023DA92D800614493 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Landing.storyboard;
 			sourceTree = "<group>";
 		};
 		8AA670A423DA92DF00614493 /* LaunchScreen.storyboard */ = {
@@ -395,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Teste.TNL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Teste.TNL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
