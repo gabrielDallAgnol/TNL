@@ -22,6 +22,15 @@
 		8AA670C223DAB22D00614493 /* UITapGestureRecognizerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */; };
 		8AA670C423DABCA500614493 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C323DABCA500614493 /* UIViewControllerExtensions.swift */; };
 		8AA670C823DAD67D00614493 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670C723DAD67D00614493 /* StringExtensions.swift */; };
+		8AA670E023DBDBB300614493 /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670DF23DBDBB300614493 /* ChallengeModel.swift */; };
+		8AA670EB23DC9A6C00614493 /* ChallengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670E923DC9A6C00614493 /* ChallengesTableViewController.swift */; };
+		8AA670EC23DC9A6C00614493 /* ChallengesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA670EA23DC9A6C00614493 /* ChallengesTableViewController.xib */; };
+		8AA670EE23DC9DE100614493 /* ChallengesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA670ED23DC9DE100614493 /* ChallengesTableViewModel.swift */; };
+		8AE8D38623DCCBAD0051B607 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D38523DCCBAD0051B607 /* ChallengeTableViewCell.swift */; };
+		8AE8D38823DCCBBD0051B607 /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE8D38723DCCBBD0051B607 /* ChallengeTableViewCell.xib */; };
+		8AE8D38A23DCD8260051B607 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D38923DCD8260051B607 /* HomeTabBarController.swift */; };
+		8AE8D38C23DCD8800051B607 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D38B23DCD8800051B607 /* LoginViewModel.swift */; };
+		8AE8D38E23DCD88F0051B607 /* LoginViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D38D23DCD88F0051B607 /* LoginViewWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +53,15 @@
 		8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtensions.swift; sourceTree = "<group>"; };
 		8AA670C323DABCA500614493 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8AA670C723DAD67D00614493 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8AA670DF23DBDBB300614493 /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
+		8AA670E923DC9A6C00614493 /* ChallengesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTableViewController.swift; sourceTree = "<group>"; };
+		8AA670EA23DC9A6C00614493 /* ChallengesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesTableViewController.xib; sourceTree = "<group>"; };
+		8AA670ED23DC9DE100614493 /* ChallengesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTableViewModel.swift; sourceTree = "<group>"; };
+		8AE8D38523DCCBAD0051B607 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		8AE8D38723DCCBBD0051B607 /* ChallengeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChallengeTableViewCell.xib; sourceTree = "<group>"; };
+		8AE8D38923DCD8260051B607 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		8AE8D38B23DCD8800051B607 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8AE8D38D23DCD88F0051B607 /* LoginViewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +145,12 @@
 		8AA670AF23DA98D900614493 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8AA670BC23DAB02600614493 /* NotificationModel */,
+				8AA670E223DBDF6F00614493 /* Challenges */,
+				8AA670E123DBDF6300614493 /* HomeTabBar */,
 				8AA670B323DA9D1F00614493 /* Login */,
+				8AA670BC23DAB02600614493 /* NotificationModel */,
 				8AA670B023DA98EB00614493 /* Landing */,
+				8AA670E323DBDF7F00614493 /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -148,6 +169,8 @@
 			children = (
 				8AA670B423DA9D4300614493 /* LoginViewController.swift */,
 				8AA670B523DA9D4300614493 /* LoginViewController.xib */,
+				8AE8D38D23DCD88F0051B607 /* LoginViewWorker.swift */,
+				8AE8D38B23DCD8800051B607 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -155,6 +178,7 @@
 		8AA670B823DA9F7300614493 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				8AA670DF23DBDBB300614493 /* ChallengeModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -177,6 +201,41 @@
 				8AA670BE23DAB05300614493 /* SimpleNotificationViewController.xib */,
 			);
 			path = NotificationModel;
+			sourceTree = "<group>";
+		};
+		8AA670E123DBDF6300614493 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8AE8D38923DCD8260051B607 /* HomeTabBarController.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		8AA670E223DBDF6F00614493 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				8AA670E423DBDFAB00614493 /* Cell */,
+				8AA670E923DC9A6C00614493 /* ChallengesTableViewController.swift */,
+				8AA670EA23DC9A6C00614493 /* ChallengesTableViewController.xib */,
+				8AA670ED23DC9DE100614493 /* ChallengesTableViewModel.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		8AA670E323DBDF7F00614493 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8AA670E423DBDFAB00614493 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8AE8D38723DCCBBD0051B607 /* ChallengeTableViewCell.xib */,
+				8AE8D38523DCCBAD0051B607 /* ChallengeTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +303,8 @@
 				8AA670B123DA998000614493 /* LaunchScreen.storyboard in Resources */,
 				8AA670C023DAB05300614493 /* SimpleNotificationViewController.xib in Resources */,
 				8AA670A323DA92DF00614493 /* Assets.xcassets in Resources */,
+				8AA670EC23DC9A6C00614493 /* ChallengesTableViewController.xib in Resources */,
+				8AE8D38823DCCBBD0051B607 /* ChallengeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +358,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA670C423DABCA500614493 /* UIViewControllerExtensions.swift in Sources */,
+				8AE8D38623DCCBAD0051B607 /* ChallengeTableViewCell.swift in Sources */,
+				8AE8D38A23DCD8260051B607 /* HomeTabBarController.swift in Sources */,
 				8AA670B623DA9D4400614493 /* LoginViewController.swift in Sources */,
 				8AA670C223DAB22D00614493 /* UITapGestureRecognizerExtensions.swift in Sources */,
+				8AA670EB23DC9A6C00614493 /* ChallengesTableViewController.swift in Sources */,
 				8AA670C823DAD67D00614493 /* StringExtensions.swift in Sources */,
 				8AA670BF23DAB05300614493 /* SimpleNotificationViewController.swift in Sources */,
+				8AE8D38C23DCD8800051B607 /* LoginViewModel.swift in Sources */,
 				8AA670BB23DA9FED00614493 /* ColorsExtensions.swift in Sources */,
+				8AA670EE23DC9DE100614493 /* ChallengesTableViewModel.swift in Sources */,
 				8AA6709E23DA92D800614493 /* LandingViewController.swift in Sources */,
 				8AA6709A23DA92D800614493 /* AppDelegate.swift in Sources */,
 				8AA6709C23DA92D800614493 /* SceneDelegate.swift in Sources */,
+				8AE8D38E23DCD88F0051B607 /* LoginViewWorker.swift in Sources */,
+				8AA670E023DBDBB300614493 /* ChallengeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
