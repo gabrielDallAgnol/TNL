@@ -10,6 +10,7 @@ import UIKit
 
 class LandingViewController: UIViewController {
   
+  // MARK: Outlets
   @IBOutlet weak var backgroundView: UIView! {
     didSet {
       backgroundView.backgroundColor = UIColor.darkBlueGrey
@@ -87,6 +88,7 @@ class LandingViewController: UIViewController {
     }
   }
   
+  // MARK: Override
   override func viewDidAppear(_ animated: Bool) {
     navigationController?.navigationBar.barStyle = .black
     self.navigationController?.navigationBar.isHidden = true
@@ -94,9 +96,12 @@ class LandingViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     setupLabelTouch()
   }
+}
+
+// MARK: Extension ViewController
+private extension LandingViewController {
   
   private func setupLabelTouch() {
     let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.termsAndPrivacyGestureRecognizer(gesture:)))
@@ -106,11 +111,23 @@ class LandingViewController: UIViewController {
   
   @objc func termsAndPrivacyGestureRecognizer(gesture: UITapGestureRecognizer) {
     if gesture.didTapAttributedTextInLabel(label: termsLabel, inRange: NSRange(location: 31, length: 12)) {
-      print("Tapped Terms")
+
+      let viewController = SimpleNotificationViewController()
+      viewController.titleModal = "Terms of Use"
+      viewController.descriptionInfo = "You are allowed to use <b>if you promisse tell about this app to all your friends</b>.<br>"
+      viewController.titleButton = "ALL RIGHT"
+      viewController.modalPresentationStyle = .overCurrentContext
+      present(viewController, animated: false, completion: nil)
+      
     } else if gesture.didTapAttributedTextInLabel(label: termsLabel, inRange: NSRange(location: 48, length: 14)) {
-      print("Tapped Privacy")
-    } else {
-      print("Tapped none")
+      
+      let viewController = SimpleNotificationViewController()
+      viewController.titleModal = "Privacy Policy"
+      viewController.descriptionInfo = "<br>In Pregress. <br><br>But stay cool, <b>your privacy it's garanted</b>.<br>"
+      viewController.titleButton = "AMAZING"
+      viewController.modalPresentationStyle = .overCurrentContext
+      present(viewController, animated: false, completion: nil)
+      
     }
   }
   
@@ -120,7 +137,12 @@ class LandingViewController: UIViewController {
   }
   
   @objc func tappedRegisterButton() {
-    print("Go to Register")
+    let viewController = SimpleNotificationViewController()
+    viewController.titleModal = "Ops..."
+    viewController.descriptionInfo = "This feature still in development. <br><br>But fell free to <b>Login</b>, read our <b>Terms of Use</b> or give a look in the <b>Privacy Policy</b>."
+    viewController.titleButton = "OK"
+    viewController.modalPresentationStyle = .overCurrentContext
+    present(viewController, animated: false, completion: nil)
   }
 }
 

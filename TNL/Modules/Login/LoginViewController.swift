@@ -10,7 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
   
+  private var bottonConstant: CGFloat?
   
+  // MARK: Outlets
   @IBOutlet weak var emailLabel: UILabel! {
     didSet {
       let attributedString = NSMutableAttributedString(string: "Email adress", attributes: [
@@ -54,11 +56,11 @@ class LoginViewController: UIViewController {
    
   @IBOutlet weak var loginButton: UIButton! {
      didSet {
-//       loginButton.addTarget(
-//         self,
-//         action: #selector(tappedRegisterButton),
-//         for: .touchUpInside
-//       )
+       loginButton.addTarget(
+         self,
+         action: #selector(tappedLoginButton),
+         for: .touchUpInside
+       )
        
        let attributedString = NSMutableAttributedString(string: "Login", attributes: [
        .font: UIFont.systemFont(ofSize: 14.0, weight: .bold),
@@ -87,8 +89,8 @@ class LoginViewController: UIViewController {
     }
   }
   
-  private var bottonConstant: CGFloat?
-  
+
+  // MARK: Override
   override func viewWillAppear(_ animated: Bool) {
     navigationController?.navigationBar.barStyle = .default
     self.navigationController?.navigationBar.isHidden = false
@@ -101,12 +103,17 @@ class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupNavigationBar()
     self.setupKeyboard()
+    
+    setupNavigationBar()
     
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
   }
+}
+
+// MARK: Extension ViewController
+private extension LoginViewController {
   
   private func setupNavigationBar() {
     
@@ -117,7 +124,7 @@ class LoginViewController: UIViewController {
     button.setImage(UIImage(named: "arrowleft16Px"), for: .normal)
     button.addTarget(
       self,
-      action: #selector(popToPrevious),
+      action: #selector(tappedBackButton),
       for: .touchUpInside
     )
     navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
@@ -126,11 +133,15 @@ class LoginViewController: UIViewController {
     
   }
   
-  @objc private func popToPrevious() {
+  @objc private func tappedBackButton() {
     navigationController?.popViewController(animated: true)
   }
   
-  @objc func keyboardWillShow(notification:NSNotification){
+  @objc private func tappedLoginButton() {
+    navigationController?.popViewController(animated: true)
+  }
+  
+  @objc private func keyboardWillShow(notification:NSNotification){
     if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
         if view.frame.origin.y == 0{
             let height = keyboardSize.height
@@ -143,4 +154,5 @@ class LoginViewController: UIViewController {
     bottonConstraint.constant = bottonConstant ?? 120
     
   }
+  
 }
