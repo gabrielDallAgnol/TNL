@@ -20,19 +20,14 @@ class ChallengeTableViewCell: UITableViewCell {
   @IBOutlet weak var completeButton: UIButton!
   @IBOutlet weak var skipButton: UIButton!
   
-  var cellColor: UIColor!
-  var cellStatus: String!
-  
+  var status: String!
+  var color: String!
+  var isSuper: Bool!
   
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+ 
     
 }

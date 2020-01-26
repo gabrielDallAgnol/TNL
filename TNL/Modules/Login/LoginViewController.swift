@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
   
   private var bottonConstant: CGFloat?
+  private var viewModel: LoginViewModel
   
   // MARK: Outlets
   @IBOutlet weak var emailLabel: UILabel! {
@@ -89,6 +90,15 @@ class LoginViewController: UIViewController {
     }
   }
   
+  init(viewModel: LoginViewModel) {
+      self.viewModel = viewModel
+      super.init(nibName: nil, bundle: nil)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+      fatalError("\(#file) \(#function) not implemented")
+  }
+  
 
   // MARK: Override
   override func viewWillAppear(_ animated: Bool) {
@@ -138,7 +148,7 @@ private extension LoginViewController {
   }
   
   @objc private func tappedLoginButton() {
-    navigationController?.popViewController(animated: true)
+    navigationController?.pushViewController(viewModel.TabBarController(), animated: false)
   }
   
   @objc private func keyboardWillShow(notification:NSNotification){

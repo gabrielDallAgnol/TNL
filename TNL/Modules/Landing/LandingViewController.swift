@@ -132,7 +132,8 @@ private extension LandingViewController {
   }
   
   @objc func tappedLoginButton() {
-    let viewController = LoginViewController()
+    let viewModel = LoginViewModel()
+    let viewController = LoginViewController(viewModel: viewModel)
     self.navigationController!.pushViewController(viewController, animated: true)
   }
   

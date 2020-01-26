@@ -7,7 +7,16 @@
 //
 
 import Foundation
+import Alamofire
+import AlamofireObjectMapper
 
 class LoginViewWorker {
   
+  func fetch() {
+    let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+    
+    AF.request(URL).responseObject(completionHandler: { (response: AFDataResponse<ChallengeModel>) in
+      
+    })
+  }
 }

@@ -1,0 +1,20 @@
+{
+    "posts": [
+      { "tag": ["title", "title2"],
+        "firstTitle": "json-server",
+        "firstDescription": "typicode",
+        "secondTitle": "json-server",
+        "secondDescription": "typicode",
+        "color": "yellow",
+        "isComplete": false,
+        "isHighlight": false },
+        { "tag": ["title", "title2"],
+            "firstTitle": "json-server",
+            "firstDescription": "typicode",
+            "secondTitle": "json-server",
+            "secondDescription": "typicode",
+            "color": "yellow",
+            "isComplete": false,
+            "isHighlight": false }
+    ]
+  }
