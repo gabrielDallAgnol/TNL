@@ -1,5 +1,5 @@
 //
-//  HomeTabBarController.swift
+//  SettingsViewController.swift
 //  TNL
 //
 //  Created by Gabriel Schmit Dall Agnol on 25/01/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class HomeTabBarController: UITabBarController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
