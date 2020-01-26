@@ -6,7 +6,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "purple",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["have refreshing rest"],
@@ -15,7 +15,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "waterGreen",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["enjoy sunlight"],
@@ -24,7 +24,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "yellow",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["nutrition"],
@@ -33,7 +33,7 @@
       "secondTitle": "consume",
       "secondDescription": "3 Serving of Fruit & Veggies; 4 Servings of Whole Grains, 1 Serving of Nuts",
       "color": "green",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["exercise"],
@@ -42,7 +42,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "pink",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["water"],
@@ -51,7 +51,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "blue",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["live temperaly"],
@@ -60,7 +60,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "orange",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": true },
     
     { "tag": ["education"],
@@ -69,7 +69,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "gray",
-      "isComplete": false,
+      "stauts": "todo",
       "isHighlight": false },
     
     { "tag": ["stress less"],
@@ -78,7 +78,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "purple",
-      "isComplete": true,
+      "stauts": "complete",
       "isHighlight": false },
     
     { "tag": ["invest in others"],
@@ -87,7 +87,7 @@
       "secondTitle": "",
       "secondDescription": "",
       "color": "red",
-      "isComplete": false,
+      "stauts": "skip",
       "isHighlight": false }
   ]
 }
