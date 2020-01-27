@@ -49,6 +49,10 @@ class LandingViewController: UIViewController {
       termsLabel.lineBreakMode = .byWordWrapping
       termsLabel.adjustsFontSizeToFitWidth = true
       
+      let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.termsAndPrivacyGestureRecognizer(gesture:)))
+      self.termsLabel.isUserInteractionEnabled = true
+      self.termsLabel.addGestureRecognizer(labelTap)
+      
     }
   }
   
@@ -96,18 +100,11 @@ class LandingViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupLabelTouch()
   }
 }
 
 // MARK: Extension ViewController
 private extension LandingViewController {
-  
-  private func setupLabelTouch() {
-    let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.termsAndPrivacyGestureRecognizer(gesture:)))
-    self.termsLabel.isUserInteractionEnabled = true
-    self.termsLabel.addGestureRecognizer(labelTap)
-  }
   
   @objc func termsAndPrivacyGestureRecognizer(gesture: UITapGestureRecognizer) {
     if gesture.didTapAttributedTextInLabel(label: termsLabel, inRange: NSRange(location: 31, length: 12)) {

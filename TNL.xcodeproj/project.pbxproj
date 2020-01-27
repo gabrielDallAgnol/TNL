@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8A1D6921A71CE0577ADF2CE6 /* Pods_TNL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7543842B17FCCA3E1A20B87A /* Pods_TNL.framework */; };
+		8A4A3E0623DE950300672C09 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A3E0523DE950300672C09 /* SettingsViewModel.swift */; };
+		8A4A3E0923DE9AD900672C09 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A3E0723DE9AD900672C09 /* SettingsTableViewController.swift */; };
+		8A4A3E0A23DE9AD900672C09 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A3E0823DE9AD900672C09 /* SettingsTableViewController.xib */; };
 		8AA6709A23DA92D800614493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709923DA92D800614493 /* AppDelegate.swift */; };
 		8AA6709C23DA92D800614493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709B23DA92D800614493 /* SceneDelegate.swift */; };
 		8AA6709E23DA92D800614493 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6709D23DA92D800614493 /* LandingViewController.swift */; };
@@ -30,16 +33,18 @@
 		8AE8D38823DCCBBD0051B607 /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE8D38723DCCBBD0051B607 /* ChallengeTableViewCell.xib */; };
 		8AE8D38C23DCD8800051B607 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D38B23DCD8800051B607 /* LoginViewModel.swift */; };
 		8AE8D38E23DCD88F0051B607 /* LoginViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D38D23DCD88F0051B607 /* LoginViewWorker.swift */; };
-		8AE8D39423DCFC410051B607 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D39223DCFC410051B607 /* SettingsViewController.swift */; };
-		8AE8D39523DCFC410051B607 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE8D39323DCFC410051B607 /* SettingsViewController.xib */; };
 		8AE8D39923DCFCE30051B607 /* InProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D39723DCFCE30051B607 /* InProgressViewController.swift */; };
 		8AE8D39A23DCFCE30051B607 /* InProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE8D39823DCFCE30051B607 /* InProgressViewController.xib */; };
+		8AE8D39C23DDFD7A0051B607 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D39B23DDFD7A0051B607 /* UILabelExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D6D6C3F328E2994A9522FAD /* Pods-TNL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNL.debug.xcconfig"; path = "Target Support Files/Pods-TNL/Pods-TNL.debug.xcconfig"; sourceTree = "<group>"; };
 		46640A2562C4435154316242 /* Pods-TNL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNL.release.xcconfig"; path = "Target Support Files/Pods-TNL/Pods-TNL.release.xcconfig"; sourceTree = "<group>"; };
 		7543842B17FCCA3E1A20B87A /* Pods_TNL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TNL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4A3E0523DE950300672C09 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		8A4A3E0723DE9AD900672C09 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		8A4A3E0823DE9AD900672C09 /* SettingsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
 		8AA6709623DA92D800614493 /* TNL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA6709923DA92D800614493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA6709B23DA92D800614493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,10 +69,9 @@
 		8AE8D38723DCCBBD0051B607 /* ChallengeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChallengeTableViewCell.xib; sourceTree = "<group>"; };
 		8AE8D38B23DCD8800051B607 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8AE8D38D23DCD88F0051B607 /* LoginViewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewWorker.swift; sourceTree = "<group>"; };
-		8AE8D39223DCFC410051B607 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		8AE8D39323DCFC410051B607 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		8AE8D39723DCFCE30051B607 /* InProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressViewController.swift; sourceTree = "<group>"; };
 		8AE8D39823DCFCE30051B607 /* InProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InProgressViewController.xib; sourceTree = "<group>"; };
+		8AE8D39B23DDFD7A0051B607 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,24 @@
 				46640A2562C4435154316242 /* Pods-TNL.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A7767DC23DE7D5D001DE6EB /* TabBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				8AA670E323DBDF7F00614493 /* Settings */,
+				8AA670E223DBDF6F00614493 /* Challenges */,
+			);
+			path = TabBarViews;
+			sourceTree = "<group>";
+		};
+		8A7767DD23DE7D90001DE6EB /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				8AE8D39623DCFCC80051B607 /* InProgress */,
+				8AA670BC23DAB02600614493 /* NotificationModel */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		8AA6708D23DA92D800614493 = {
@@ -151,12 +173,10 @@
 		8AA670AF23DA98D900614493 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8AE8D39623DCFCC80051B607 /* InProgress */,
-				8AA670E223DBDF6F00614493 /* Challenges */,
-				8AA670B323DA9D1F00614493 /* Login */,
-				8AA670BC23DAB02600614493 /* NotificationModel */,
+				8A7767DD23DE7D90001DE6EB /* Alerts */,
+				8A7767DC23DE7D5D001DE6EB /* TabBarViews */,
 				8AA670B023DA98EB00614493 /* Landing */,
-				8AA670E323DBDF7F00614493 /* Settings */,
+				8AA670B323DA9D1F00614493 /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -196,6 +216,7 @@
 				8AA670C123DAB22D00614493 /* UITapGestureRecognizerExtensions.swift */,
 				8AA670C323DABCA500614493 /* UIViewControllerExtensions.swift */,
 				8AA670C723DAD67D00614493 /* StringExtensions.swift */,
+				8AE8D39B23DDFD7A0051B607 /* UILabelExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,8 +235,8 @@
 			children = (
 				8AA670E423DBDFAB00614493 /* Cell */,
 				8AA670E923DC9A6C00614493 /* ChallengesTableViewController.swift */,
-				8AA670EA23DC9A6C00614493 /* ChallengesTableViewController.xib */,
 				8AA670ED23DC9DE100614493 /* ChallengesTableViewModel.swift */,
+				8AA670EA23DC9A6C00614493 /* ChallengesTableViewController.xib */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -223,8 +244,9 @@
 		8AA670E323DBDF7F00614493 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				8AE8D39223DCFC410051B607 /* SettingsViewController.swift */,
-				8AE8D39323DCFC410051B607 /* SettingsViewController.xib */,
+				8A4A3E0523DE950300672C09 /* SettingsViewModel.swift */,
+				8A4A3E0723DE9AD900672C09 /* SettingsTableViewController.swift */,
+				8A4A3E0823DE9AD900672C09 /* SettingsTableViewController.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -307,11 +329,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4A3E0A23DE9AD900672C09 /* SettingsTableViewController.xib in Resources */,
 				8AA670B723DA9D4400614493 /* LoginViewController.xib in Resources */,
 				8AE8D39A23DCFCE30051B607 /* InProgressViewController.xib in Resources */,
 				8AA670B223DA998600614493 /* Landing.storyboard in Resources */,
 				8AA670B123DA998000614493 /* LaunchScreen.storyboard in Resources */,
-				8AE8D39523DCFC410051B607 /* SettingsViewController.xib in Resources */,
 				8AA670C023DAB05300614493 /* SimpleNotificationViewController.xib in Resources */,
 				8AA670A323DA92DF00614493 /* Assets.xcassets in Resources */,
 				8AA670EC23DC9A6C00614493 /* ChallengesTableViewController.xib in Resources */,
@@ -375,13 +397,15 @@
 				8AA670EB23DC9A6C00614493 /* ChallengesTableViewController.swift in Sources */,
 				8AA670C823DAD67D00614493 /* StringExtensions.swift in Sources */,
 				8AA670BF23DAB05300614493 /* SimpleNotificationViewController.swift in Sources */,
-				8AE8D39423DCFC410051B607 /* SettingsViewController.swift in Sources */,
 				8AE8D38C23DCD8800051B607 /* LoginViewModel.swift in Sources */,
 				8AA670BB23DA9FED00614493 /* ColorsExtensions.swift in Sources */,
 				8AA670EE23DC9DE100614493 /* ChallengesTableViewModel.swift in Sources */,
 				8AA6709E23DA92D800614493 /* LandingViewController.swift in Sources */,
 				8AA6709A23DA92D800614493 /* AppDelegate.swift in Sources */,
 				8AA6709C23DA92D800614493 /* SceneDelegate.swift in Sources */,
+				8A4A3E0623DE950300672C09 /* SettingsViewModel.swift in Sources */,
+				8AE8D39C23DDFD7A0051B607 /* UILabelExtensions.swift in Sources */,
+				8A4A3E0923DE9AD900672C09 /* SettingsTableViewController.swift in Sources */,
 				8AE8D39923DCFCE30051B607 /* InProgressViewController.swift in Sources */,
 				8AE8D38E23DCD88F0051B607 /* LoginViewWorker.swift in Sources */,
 				8AA670E023DBDBB300614493 /* ChallengeModel.swift in Sources */,

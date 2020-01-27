@@ -27,10 +27,18 @@ extension String {
   }
   
   func isValidEmail() -> Bool {
-    let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-    
-    let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-    return emailPred.evaluate(with: self)
+    let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+    return emailPredicate.evaluate(with: self)
+  }
+  
+  func leftPadding(toLength: Int, withPad character: Character) -> String {
+      let newLength = self.count
+      if newLength < toLength {
+          return String(repeatElement(character, count: toLength - newLength)) + self
+      } else {
+          return self.substring(from: index(self.startIndex, offsetBy: newLength - toLength))
+      }
   }
 }
 
@@ -47,4 +55,7 @@ extension NSMutableAttributedString {
         }
         endEditing()
     }
+  
+      
+  
 }

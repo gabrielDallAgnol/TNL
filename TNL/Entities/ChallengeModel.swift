@@ -9,6 +9,18 @@
 import Foundation
 import ObjectMapper
 
+struct Challenges: Mappable {
+  
+  var challenges = [ChallengeModel]()
+  
+  init?(map: Map) {
+  }
+  
+  mutating func mapping(map: Map) {
+    challenges             <- map["challenges"]
+  }
+}
+
 struct ChallengeModel {
   
   var tags = [String]()
@@ -19,8 +31,7 @@ struct ChallengeModel {
   var secondTitle: String?
   var firstDescrition: String?
   var secondDescription: String?
-  
-  var itsHighlighted = false
+  var itsHighlighted: String?
   
 }
 
@@ -30,13 +41,13 @@ extension ChallengeModel: Mappable {
   }
   
   mutating func mapping(map: Map) {
-    tags                    <- map["tags"]
+    tags                    <- map["tag"]
     color                   <- map["color"]
     firstTitle              <- map["firstTitle"]
     secondTitle             <- map["secondTitle"]
-    firstDescrition         <- map["firstDescrition"]
+    firstDescrition         <- map["firstDescription"]
     secondDescription       <- map["secondDescription"]
     status                  <- map["stauts"]
-    itsHighlighted          <- map["itsHighlight"]
+    itsHighlighted          <- map["isHighlight"]
   }  
 }
