@@ -7,7 +7,7 @@
       "secondDescription": "",
       "color": "purple",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "false" },
     
     { "tag": ["have refreshing rest"],
       "firstTitle": "Prepare for bed at 10:30:00 PM",
@@ -16,7 +16,7 @@
       "secondDescription": "",
       "color": "waterGreen",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "true" },
     
     { "tag": ["enjoy sunlight"],
       "firstTitle": "Enjoy 5 minutes outside with direct sunlight to face and/or hands",
@@ -25,7 +25,7 @@
       "secondDescription": "",
       "color": "yellow",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "false" },
     
     { "tag": ["nutrition"],
       "firstTitle": "avoid",
@@ -34,7 +34,7 @@
       "secondDescription": "3 Serving of Fruit & Veggies; 4 Servings of Whole Grains, 1 Serving of Nuts",
       "color": "green",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "false" },
     
     { "tag": ["exercise"],
       "firstTitle": "5 minutes of stretching",
@@ -43,7 +43,7 @@
       "secondDescription": "",
       "color": "pink",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "false" },
     
     { "tag": ["water"],
       "firstTitle": "Drink at least three glasses of water",
@@ -52,7 +52,7 @@
       "secondDescription": "",
       "color": "blue",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "true" },
     
     { "tag": ["live temperaly"],
       "firstTitle": "Absolutely: No alcohol or smoking of any kind",
@@ -61,7 +61,7 @@
       "secondDescription": "",
       "color": "orange",
       "stauts": "todo",
-      "isHighlight": true },
+      "isHighlight": "true" },
     
     { "tag": ["education"],
       "firstTitle": "Read and comment on a post from The New Life blog",
@@ -70,7 +70,7 @@
       "secondDescription": "",
       "color": "gray",
       "stauts": "todo",
-      "isHighlight": false },
+      "isHighlight": "false" },
     
     { "tag": ["stress less"],
       "firstTitle": "Play some video games",
@@ -79,7 +79,7 @@
       "secondDescription": "",
       "color": "purple",
       "stauts": "complete",
-      "isHighlight": false },
+      "isHighlight": "false" },
     
     { "tag": ["invest in others"],
       "firstTitle": "invite a friend to join you and take The New Life challenge",
@@ -88,6 +88,6 @@
       "secondDescription": "",
       "color": "red",
       "stauts": "skip",
-      "isHighlight": false }
+      "isHighlight": "false" }
   ]
 }
