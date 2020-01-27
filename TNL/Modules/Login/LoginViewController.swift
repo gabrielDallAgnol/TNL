@@ -75,6 +75,12 @@ class LoginViewController: UIViewController {
    
   @IBOutlet weak var forgetPasswordButton: UIButton! {
      didSet {
+      forgetPasswordButton.addTarget(
+        self,
+        action: #selector(tappedForgetPasswordButton),
+        for: .touchUpInside
+      )
+      
        let attributedString = NSMutableAttributedString(string: "Forget Password", attributes: [
        .font: UIFont.systemFont(ofSize: 14.0, weight: .medium),
        .foregroundColor: UIColor.brownishGrey ])
@@ -147,8 +153,45 @@ private extension LoginViewController {
     navigationController?.popViewController(animated: true)
   }
   
+  @objc private func tappedForgetPasswordButton() {
+     let activityView = UIActivityIndicatorView(style: .large)
+     activityView.center = self.view.center
+     activityView.startAnimating()
+     self.view.isUserInteractionEnabled = false
+     self.view.addSubview(activityView)
+     
+     viewModel.worker.fetch { (challenges) -> (Void) in
+       activityView.stopAnimating()
+       self.view.isUserInteractionEnabled = true
+       let viewController = self.viewModel.TabBarController(challenges: challenges.challenges)
+       self.navigationController?.pushViewController(viewController, animated: false)
+   }
+  }
+  
   @objc private func tappedLoginButton() {
-    navigationController?.pushViewController(viewModel.TabBarController(), animated: false)
+    
+    if viewModel.isValidEmail(for: emailTextField.text ?? "") && viewModel.isValisPassword(for: passwordTextField.text ?? "") {
+      let activityView = UIActivityIndicatorView(style: .large)
+      activityView.center = self.view.center
+      activityView.startAnimating()
+      self.view.isUserInteractionEnabled = false
+      self.view.addSubview(activityView)
+      
+      viewModel.worker.fetch { (challenges) -> (Void) in
+        activityView.stopAnimating()
+        self.view.isUserInteractionEnabled = true
+        let viewController = self.viewModel.TabBarController(challenges: challenges.challenges)
+        self.navigationController?.pushViewController(viewController, animated: false)
+      }
+    } else {
+      let viewController = SimpleNotificationViewController()
+      viewController.titleModal = "Wait"
+      viewController.descriptionInfo = "Remenber, <b>must be a valid email</b> and <b>your password must be longer than 8 digits</b><br><br> Or click in forget my password to continue!"
+      viewController.titleButton = "OK"
+      viewController.modalPresentationStyle = .overCurrentContext
+      present(viewController, animated: false, completion: nil)
+    }
+    
   }
   
   @objc private func keyboardWillShow(notification:NSNotification){
@@ -162,7 +205,6 @@ private extension LoginViewController {
   
   @objc func keyboardWillHide(notification:NSNotification){
     bottonConstraint.constant = bottonConstant ?? 120
-    
   }
   
 }

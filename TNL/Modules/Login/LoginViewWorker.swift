@@ -12,11 +12,16 @@ import AlamofireObjectMapper
 
 class LoginViewWorker {
   
-  func fetch() {
-    let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+  func fetch(with completion: ((Challenges) -> (Void))?) {
+    let URL = "https://my-json-server.typicode.com/gabrielDallAgnol/TNL/db"
     
-    AF.request(URL).responseObject(completionHandler: { (response: AFDataResponse<ChallengeModel>) in
-      
+    AF.request(URL).responseObject(completionHandler: { (response: AFDataResponse<Challenges>) in
+      switch response.result {
+      case .success(let challenges):
+        completion!(challenges)
+      case .failure( _):
+        completion!(Challenges(JSON: ["challenges" : []])!)
+      }
     })
   }
 }
